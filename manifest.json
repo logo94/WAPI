@@ -1,0 +1,23 @@
+{
+    "manifest_version":3,
+    "name":"WAPI",
+    "author": {
+        "name": "logo94",
+        "url": "https://github.com/logo94",
+        "email": "lorenzo.gobbo@usi.ch"
+    },
+    "version":"0.0.0",
+    "description": "Wikidata ID finder",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "img/Wikidata-logo.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab", 
+        "tabs"
+    ],
+    "host_permissions": ["*://*/*"]
+}

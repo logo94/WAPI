@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="/js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-4.0.0.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- Extension title -->
+    <div class="row text-center mt-3">
+        <p class="mb-0"><b>WAPI</b></p><br>
+        <p><i>Wikidata ID finder</i></p>
+    </div>
+
+    <!-- Search form -->
+    <div class="form-inline justify-content-center my-3">
+        <input type="text" name="input" class="form-control" id="uri_input">
+        <button type="submit" class="btn btn-primary" id="btn_search_entities">Cerca</button>
+    </div>
+    
+    <!-- Results list -->
+    <hr class="mx-4" id="break_line">
+    <div class="row overflow-y-auto">
+        <ul class="list-group list-group-flush" id="uri_list">
+        </ul>
+    </div>
+
+    <!-- Modal operazione in corso -->
+    <div id="statusModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="statusModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div id="status-body" class="modal-body text-center">
+                    <p>Copied!</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main script -->
+    <script src="popup.js"></script>
+</body>
+</html>

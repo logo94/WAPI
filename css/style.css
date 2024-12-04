@@ -1,0 +1,64 @@
+body {
+    min-width: 400px;
+    max-width: 1200px;
+    position: relative;
+    vertical-align:middle;
+}
+
+#uri_input {
+    width: 70%;
+}
+
+.form-inline {
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+}
+
+.form-inline input{
+    margin: 5px 5px;
+
+}
+
+.form-inline button{
+    margin: 5px 5px;
+
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#break_line {
+    display: none;
+}
+
+.btn-clipboard {
+    position: absolute;
+    top: 30%;
+    right: .65rem;
+    z-index: 10;
+    display: block;
+    padding: .25rem .25rem;
+    font-size: 65%;
+    color: black;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: .25rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #3B71CA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #9e9d9d;
+}
