@@ -6,8 +6,8 @@
         "url": "https://github.com/logo94",
         "email": "lorenzo.gobbo@usi.ch"
     },
-    "version":"0.0.1",
-    "description": "Wikidata ID finder",
+    "version":"0.0.3",
+    "description": "Wikidata Item ID finder",
     "action": {
         "default_popup": "popup/popup.html",
         "default_icon": "img/Wikidata-logo.png"
