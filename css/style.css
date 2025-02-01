@@ -35,7 +35,7 @@ p {
 
 .btn-clipboard {
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: .65rem;
     z-index: 10;
     display: block;
