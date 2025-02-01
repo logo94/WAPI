@@ -18,6 +18,10 @@ notfoundElement.innerHTML = `
     </div>
 `
 
+// Link to Wikidata results page
+const searchElement = document.createElement("li")
+searchElement.className = "list-group-item mx-2"
+
 // Link to Wikidata entity creation page
 const addElement = document.createElement("li")
 addElement.className = "list-group-item mx-2"
@@ -70,7 +74,7 @@ document.addEventListener("click", function(e){
 });
 
 // Populate entities list
-function setList(entities) {
+function setList(entities, input) {
 
     entities.forEach(entity => {
         
@@ -81,7 +85,10 @@ function setList(entities) {
                 <p><a href="${entity.uri}" class="text-decoration-none" target="_blank"><b>${entity.label}</b> (${entity.id})</a></p>
             </div>
             <div class="row ml-2">
-                <p><i>${entity.description}</i></p>
+                <p><em>${entity.description}</em></p>
+            </div>
+            <div class="row ml-2">
+                <p><small>${entity.info}</small></p>
             </div>
             <button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
@@ -94,6 +101,15 @@ function setList(entities) {
         
     });
 
+    // Wikidata result page link
+    searchElement.innerHTML = `
+    <div class="row text-center">
+        <p class="my-2"><a href="https://www.wikidata.org/w/index.php?go=Go&search=${input}&title=Special%3ASearch&ns0=1&ns120=1" class="text-decoration-none" target="_blank">All results</a></p>
+    </div>
+    `
+    resultList.appendChild(searchElement)
+
+    // Wikidata create new item page link
     resultList.appendChild(addElement)
 
 }
