@@ -9,6 +9,26 @@ body {
     width: 70%;
 }
 
+.tab-btn {
+    border: 1px solid #dee2e694;
+    background-color: #f8f9fa;
+    padding: 0.2rem 0;
+    font-weight: 300;
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.tab-btn:not(:last-child) {
+    border-right: none;
+}
+
+.active-tab {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
 .form-inline {
 display: flex;
 flex-flow: row wrap;
@@ -35,7 +55,7 @@ p {
 
 .btn-clipboard {
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: .65rem;
     z-index: 10;
     display: block;
@@ -48,7 +68,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-track {
