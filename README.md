@@ -5,7 +5,7 @@ WAPI is a browser extension that enables quick searches on Wikidata by leveragin
 The extension offers three main features:
 - Search for items by ID or label;
 - Search for properties related to a given starting property;
-- A router to bypass CORS restrictions (e.g., for WikiPlayground)
+- A router to bypass CORS restrictions (e.g., for [WikiPlayground](https://labaib.github.io/WikiPlayground2.0/))
 
 ## How it works
 
