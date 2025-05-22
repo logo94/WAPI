@@ -6,7 +6,7 @@
         "url": "https://github.com/logo94",
         "email": "lorenzo.gobbo@usi.ch"
     },
-    "version":"0.0.3",
+    "version":"3.0.0",
     "description": "Wikidata Item ID finder",
     "action": {
         "default_popup": "popup/popup.html",
@@ -14,5 +14,20 @@
     },
     "background": {
         "service_worker": "background.js"
-    }
+    },
+    "content_scripts": [
+    {
+        "matches": [
+            "https://logo94.github.io/*",
+            "https://labaib.github.io/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_start"
+        }
+    ],
+    "host_permissions": [
+        "https://www.wikidata.org/*",
+        "http://viaf.org/*",
+        "https://opac.sbn.it/*"
+    ]
 }
