@@ -7,7 +7,8 @@ The extension offers three main features:
 - Search for properties related to a given starting property;
 - A router to bypass CORS restrictions (e.g., for [WikiPlayground](https://labaib.github.io/WikiPlayground2.0/))
 
-More details can be found in the dedicated [wiki](https://github.com/logo94/WAPI/wiki/WAPI)
+
+> More details can be found in the dedicated [wiki](https://github.com/logo94/WAPI/wiki/WAPI)
 
 
 
